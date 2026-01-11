@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +19,7 @@
         <a href="#offers">Offers</a>
         <a href="#contact">Contact</a>
     </nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 </header>
 
 <!-- HOME -->
@@ -52,7 +54,6 @@
     </div>
 </section>
 
-
 <!-- PRODUCTS -->
 <section id="products" class="products">
     <h2>Our Products</h2>
@@ -62,22 +63,21 @@
             <img src="https://th.bing.com/th/id/OIP.ib_NftQTbB7O6n_L4ERuvAHaKI?w=198&h=271&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Fashion">
             <h3>Fashion</h3>
             <p>Trendy clothes & accessories</p>
-            <a href="https://www.amazon.in"target="_blank">Buy Now</a> 
+            <a href="https://www.amazon.in" target="_blank">Buy Now</a> 
         </div>
 
         <div class="card">
             <img src="https://th.bing.com/th/id/OIP.EE_ndsO6kcX6VmcLnBW97gHaEJ?w=157&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3" alt="Electronics">
             <h3>Electronics</h3>
             <p>Latest gadgets & devices</p>
-            <a href="https://www.amazon.in"target="_blank">Buy Now</a> 
+            <a href="https://www.amazon.in" target="_blank">Buy Now</a> 
         </div>
 
         <div class="card">
             <img src="https://th.bing.com/th/id/OIP.VRSQGmxbVVCCaJR1tqLwfQHaEJ?w=276&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Beauty">
             <h3>Beauty</h3>
             <p>Makeup & skincare products</p>
-           <a href="https://www.amazon.in" target="_blank">Buy Now</a>
-
+            <a href="https://www.amazon.in" target="_blank">Buy Now</a>
         </div>
     </div>
 </section>
@@ -98,14 +98,20 @@
 <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Email: shopwithme@gmail.com</p>
-    
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 ShopWithMe | Designed by Rati sharma</p>
+    <p>© 2026 ShopWithMe | Designed by Rati Sharma</p>
 </footer>
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('header nav');
+    nav.classList.toggle('active');
+}
+</script>
 
 </body>
 </html>
-
